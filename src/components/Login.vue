@@ -79,7 +79,6 @@ export default {
             fb.auth().createUserWithEmailAndPassword(this.email, this.password)
             .then((user) => {
                 $('#login').modal('hide')
-                // Add a new document in collection "cities"
                 db.collection("profiles").doc(user.user.uid).set({
                  name: this.name
                 })
@@ -92,7 +91,6 @@ export default {
                 this.$router.replace('admin');
             })
             .catch(function(error) {
-            // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
             if (errorCode == 'auth/weak-password') {
@@ -110,7 +108,6 @@ export default {
                         this.$router.replace('admin')
                     })
                     .catch(function(error) {
-                // Handle Errors here.
                 var errorCode = error.code;
                 var errorMessage = error.message;
                 if (errorCode === 'auth/wrong-password') {
