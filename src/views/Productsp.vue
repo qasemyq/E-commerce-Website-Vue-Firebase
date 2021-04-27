@@ -183,7 +183,6 @@ export default {
   },
   editProduct(product){
       this.modal = 'edit'
-      // ruye har dokme edit click konam dar product, datasho mizare tuye modali ke baz karde 
       this.product = product
       $('#product').modal('show')
   },
