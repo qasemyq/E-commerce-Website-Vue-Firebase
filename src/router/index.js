@@ -22,11 +22,9 @@ const routes = [
     path: '/admin',
     name: 'Admin',
     component: Admin,
-    // yani harkasi mikhad be admin area dastrasi dashte bashe bayad auth anjam bede 
     meta: { requiresAuth: true },
     children: [
       {
-        // inja / nemizaram bara childha 
         path: 'overview',
         name: 'OverView',
         component: OverView
