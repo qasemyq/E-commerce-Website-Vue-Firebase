@@ -58,7 +58,6 @@ Vue.use(Vue2Filters)
 Vue.config.productionTip = false
 
 
-// bara inke user ke tu website hat dobare khast bere /admin signin nakone in code ro minevisam 
 
 var vue = null;
 
