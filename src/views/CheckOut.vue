@@ -43,10 +43,6 @@ export default {
 
 
 <style>
-/**
- * The CSS shown here will not be introduced in the Quickstart guide, but shows
- * how you can use CSS to style your Element's container.
- */
 .StripeElement {
   box-sizing: border-box;
   height: 40px;
