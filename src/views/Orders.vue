@@ -125,7 +125,6 @@ import { VueEditor } from "vue2-editor";
 import $ from "jquery";
 import {fb,db} from '../firebase' 
 export default {
-    // VueEditor bara textarea hast ke behesh option mide bara adjust kardane extx ke ba npm nasbesh kardam. Vue2Editor 
     components: {
     VueEditor
   },
@@ -150,13 +149,11 @@ export default {
       }
   },
   methods:{
-      // vagti rush clisk mishe modal ro baz mikone 
       addNew(){
           this.modal = 'new';
           this.reset()
           $('#product').modal('show')
       },
-      // bara save data dar firestore 
       addProduct(){
           this.$firestore.products.add(this.product)
            this.$swal({
@@ -178,7 +175,6 @@ export default {
           showLoaderOnConfirm: true
         }).then((result) => {
           if(result.value) {
-              // in khat fagat delete mikone bagiye code tu in function marbut be sweetalert2 hast 
               this.$firestore.products.doc(doc.id).delete()
 
             this.$swal('Deleted', 'You successfully deleted this file', 'success')
@@ -189,7 +185,6 @@ export default {
   },
   editProduct(product){
       this.modal = 'edit'
-      // ruye har dokme edit click konam dar product, datasho mizare tuye modali ke baz karde 
       this.product = product
       $('#product').modal('show')
   },
