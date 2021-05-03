@@ -64,6 +64,7 @@
 </template>
 
 <script>
+//
 import $ from "jquery";
 import {fb,db} from '../firebase'
 export default {
