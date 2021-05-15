@@ -58,7 +58,7 @@ Vue.use(Vue2Filters)
 Vue.config.productionTip = false
 
 
-
+//
 var vue = null;
 
 fb.auth().onAuthStateChanged(user => {
