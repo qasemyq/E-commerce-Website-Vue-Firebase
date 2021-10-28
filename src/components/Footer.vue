@@ -3,7 +3,7 @@
     <div>
         <!-- Footer -->
 <footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
+  <!-- Grid container --> 
   <div class="container p-4">
     <!-- Section: Social media -->
     <section class="mb-4">
